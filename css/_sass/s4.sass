@@ -1,0 +1,83 @@
+section#s4
+  width: 100%
+  height: 500px
+.s4-c
+  height: 100%
+  .s4-item1,.s4-item2
+    width: 50%
+    float: left
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+  .s4-item1>div,.s4-item2>div
+    margin: 0 auto
+.s4-item1>div>h1
+  user-select: none
+  font-weight: 500
+  color: #808080
+  .tfms
+    font-weight: 500
+    font-size: 3em
+    color: black
+/*form style content*/
+input:focus
+  outline: none
+.inco
+  width: 100%
+  margin-top: 30px
+  height: 30px
+  font-size: .9em
+  border: none
+  border-bottom: 1px solid darken(white, 15%)
+  padding-left: 10px
+  transition: all .4s ease
+  box-shadow: none
+  background: transparent
+.laco
+  position: relative
+  border: 1px solid transparent
+.laco>span
+  position: absolute
+  top: -32px
+  left: 0
+  white-space: nowrap
+  font-size: 1.3em
+  pointer-events: none
+  color: #808080
+  user-select: none
+  transition: all .4s ease
+
+.submit
+  width: 140px
+  height: 40px
+  background: none
+  border: 1px solid black
+  float: right
+  transition: all .4s ease
+  &:hover
+    background: darken(white, 10%)
+  &:active
+    background: lighten(black, 20%)
+    color: darken(white, 10%)
+
+/* events to react*/
+
+.fullname:focus + label>span,.fullname:valid + label>span,
+.email:focus + label>span,.email:valid + label>span,
+.number:focus + label>span,.number:valid + label>span
+  top: -60px
+  font-size: .8em
+  color: black
+.fullname:valid,
+.email:valid,
+.number:valid
+  border-bottom: 1px solid lighten(green, 10%)
+.fullname:hover,
+.email:hover,
+.number:hover
+  border-bottom: 1px solid black
+.fullname:focus,
+.email:focus,
+.number:focus
+  border-bottom: 1px solid black

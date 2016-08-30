@@ -1,0 +1,59 @@
+section#template-c
+  width: 100%
+  overflow: hidden
+  .contener
+    height: auto
+.box-t-c
+  padding: 10px 0
+  overflow: hidden
+  background: white
+  ul
+    display: flex
+    justify-content: space-around
+    li
+      float: left
+      padding: 5px 8px
+      white-space: nowrap
+      color: #808080
+      text-transform: uppercase
+      user-select: none
+      cursor: pointer
+      transition: all .3s ease
+      &:hover
+        color: black
+      &.active
+        color: lighten(green,10%) !important
+.box-t-i
+  background: #f9f9f9
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  transition: all 1s ease
+  padding-bottom: 15px
+  div
+    background: #fff
+    width: 26%
+    height: auto
+    margin-top: 15px
+    animation: cate-anim .6s ease
+    overflow: hidden
+    border-radius: 5px
+    box-shadow: 1px 1px 60px 1px #f5f5f5
+    a
+      h3
+        text-align: center
+        margin: 3px 0px
+        font-weight: normal
+        white-space: nowrap
+        text-transform: capitalize
+      img
+        width: 100%
+.box-t-i div img
+  margin-bottom: -5px
+.hide
+  display: none !important
+@keyframes cate-anim
+  0%
+    opacity: 0.1
+  100%
+    opacity: 1

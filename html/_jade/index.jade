@@ -1,0 +1,47 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    |         
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |         
+    meta(name='description', content='')
+    |         
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    |         
+    link(rel='icon', type='image/png', href='favicon.png')
+    |         
+    link(rel='canonical', href='http://www.skpwebsite.com')
+    |         
+    title SKPWEBSITE
+    //if lt IE 9
+      script(src='//html5shiv.googlecode.com/svn/trunk/html5.js')
+    |         
+    link(rel='stylesheet', href='css/style.css')
+    |         
+    script(src='js/main.js')
+  |     
+  body
+    #wraper
+      section#header
+        .contener
+          .index0
+            .logo
+              img(src='img/skpwebsite-logo.svg', alt='skpwebsite')
+            |               
+            .login
+              p Login
+            |               
+            .nav
+              ul
+                li template
+                |                   
+                li service
+                |                   
+                li Category
+                |                   
+                li Contact
+    |         
+    div(include='html/index.html')
+    |         
+    script(src='bower_components/jquery/dist/jquery.min.js')
