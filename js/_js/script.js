@@ -22,6 +22,7 @@ $(document).ready(function(){
   });
 });
 
+
 /*top scroller*/
 
   $('body').append('<div class="scrolltop">&lt;</div>');

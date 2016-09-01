@@ -67,6 +67,37 @@ html(lang='en')
       $(document).ready(function() {
         addingC('a[href="/service/"]','active');
         $('a[href="#s4"]').attr('href','/contect/');
-      })
+        
+        var rand = Math.floor(Math.random()*$('.service').length+1);
+        var obja={
+          1: 'bounce',
+          2: 'bounceIn',
+          3: 'flash',
+          4: 'bounceInDown',
+          5: 'rubberBand',
+          6: 'bounceInRight',
+          7: 'bounceInLeft',
+          8: 'shake',
+          9: 'rotateInDownLeft',
+          10: 'rotateINDownRight'
+        }
+        
+        /*addanimate*/
+        var $elems = $('.service');
+        var winheight = $(window).height();
+        var fullheight = $(document).height();
+        $(window).scroll(function(){
+          wintop = $(window).scrollTop();
+          $elems.each(function(){
+            $elm = $(this);
+            if($elm.hasClass('animate')) { return true; }
+            topcoords = $elm.offset().top;
+            if(wintop > (topcoords - (winheight*.75))) {
+              $elm.addClass('animated '+obja[rand]);
+            }
+          });
+        });
+
+      });
     
       

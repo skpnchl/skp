@@ -3,4 +3,35 @@ Create your beatifull<br> WEBSITE easy way</h1></div><div class="start-now"><a h
 </div></section><section class="service s-seo"><div class="contener"><h2>search engines optimization</h2><br><p>optimize your site.</p></div></section><section class="service s-sg"><div class="contener"><h2>your site submit on google</h2><br><p>submit on google webmaster create site map.</p></div></section><section class="service s-snl"><div class="contener"><h2>social network linking</h2><br><p>link your site with facebook twitter instagram youtube linkedin etc.</p></div></section><section class="service s-promoting"><div class="contener"><h2>promoting</h2><br><p>advertising website on google facebook.</p></div></section><section class="service s-logo"><div class="contener"><h2>logo's design</h2><br><p>your site icon</p></div></section><section class="service s-ga"><div class="contener"><h2>google analytic</h2><br><p>track visitor with google analytic and much more</p></div></section><section class="service s-gtm"><div class="contener"><h2>google tag manager</h2><br><p>manage website content directly</p></div></section><section class="service s-redesign"><div class="contener"><h2>redesign</h2><br><p>old design to new design</p></div></section><section class="service s-cms"><div class="contener"><h2>cms based site </h2><br><p>easily maintain with content manager system wordpress, joomla, duple</p></div></section><section class="service s-update"><div class="contener"><h2>update your site</h2><br><p>if your website is online store manage completely with our team</p></div></section><footer><div class="contener footer-c"><div class="f-product"><h2>product</h2><ul><li><a href="/domain-help/">domain help</a></li><li><a href="/template/">template</a></li><li><a href="/logos/">logo's</a></li><li><a href="/pricing/">pricing</a></li></ul></div><div class="f-company"><h2>company</h2><ul><li><a href="/about/">about</a></li><li><a href="/customers/">customers</a></li><li><a href="/term-of-policy/">term of policy</a></li><li><a href="/contact/">contact us</a></li></ul></div><div class="f-social-media"><h2>social media</h2><ul><li><a href="https://www.facebook.com">facebook</a></li><li><a href="https://twitter.com">twitter</a></li><li><a href="https://www.instagram.com">instagram</a></li><li><a href="https://plus.google.com">google plus</a></li></ul></div></div></footer><div class="copyright">&copy; Copyright All Right Reserved <a href="/term-of-use/">Term Of Use </a>And <a href="/privacy-policy/">Privacy Policy.</a></div><script src="../js/jquery.min.js"></script><script src="../js/jquery-ui.min.js"></script><script src="../js/parallax.min.js"></script><script src="../js/_js/script.js"></script><script>$(document).ready(function() {
   addingC('a[href="/service/"]','active');
   $('a[href="#s4"]').attr('href','/contect/');
-})</script></body></html>
+  
+  var rand = Math.floor(Math.random()*$('.service').length+1);
+  var obja={
+    1: 'bounce',
+    2: 'bounceIn',
+    3: 'flash',
+    4: 'bounceInDown',
+    5: 'rubberBand',
+    6: 'bounceInRight',
+    7: 'bounceInLeft',
+    8: 'shake',
+    9: 'rotateInDownLeft',
+    10: 'rotateINDownRight'
+  }
+  
+  /*addanimate*/
+  var $elems = $('.service');
+  var winheight = $(window).height();
+  var fullheight = $(document).height();
+  $(window).scroll(function(){
+    wintop = $(window).scrollTop();
+    $elems.each(function(){
+      $elm = $(this);
+      if($elm.hasClass('animate')) { return true; }
+      topcoords = $elm.offset().top;
+      if(wintop > (topcoords - (winheight*.75))) {
+        $elm.addClass('animated '+obja[rand]);
+      }
+    });
+  });
+
+});</script></body></html>
