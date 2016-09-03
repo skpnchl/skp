@@ -1,1 +1,37 @@
-*,body,html{padding:0;margin:0}#wreper,body,html{background:#f9f9f9}@font-face{font-family:roboto;src:url(../font/Roboto-Regular.ttf)}@font-face{font-family:roboto-light;src:url(../font/Roboto-light.ttf)}::-moz-selection{background-color:rgba(51,51,51,.5)}::selection{background-color:rgba(51,51,51,.5)}*{box-sizing:border-box}body,html{font-family:roboto;overflow-x:hidden}#wreper{height:100%}body{overflow:hidden}section{width:100%;background-color:#f9f9f9}.contener{max-width:1200px;margin:0 auto;padding:0 10px}
+@font-face {
+  font-family: roboto-light;
+  src: url("../font/Roboto-light.ttf"); }
+
+::-moz-selection {
+  background-color: rgba(51, 51, 51, 0.5); }
+
+::selection {
+  background-color: rgba(51, 51, 51, 0.5); }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body, html {
+  font-family: roboto-light;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  background: #f9f9f9; }
+
+#wreper {
+  height: 100%;
+  background: #f9f9f9; }
+
+body {
+  overflow: hidden; }
+
+section {
+  width: 100%;
+  background-color: #f9f9f9; }
+
+.contener {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 10px; }

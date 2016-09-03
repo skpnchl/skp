@@ -5,17 +5,35 @@ html(lang='en')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    title LOGOS
+    title ABOUT
     link(rel='icon', type='image/png', href='../favicon.png')
     link(rel='canonical', href='http://www.skpwebsite.com')
     link(rel='stylesheet', href='../css/style.css')
   body
     include ../../_jade/header
-    
+    #m-about
+      div: .contener
+        h1 it's not our work life, it's our life's work.
+        h3 new day new challenge
+      div: .contener
+        h3 how we work
+        p small teams with big ideas.
+        p client as a partner help truly.
+      div: .contener
+        h3 who we are
+        p designers and thinkers
+        p we give full time on your project
+      div: .contener
+        h1 c.e.o
+        p sk panchal  
+          a.link-p(href='https://plus.google.com/skp',target="_blank") (profile) 
+          br
+          a.link-p(href='../resum.docx') resum
+        p you want proof call me now I well give you
     include ../../_jade/footer
     include ../../_jade/script
     script.
       $(document).ready(function(){
-        addingC('a[href="/logos/"]','active');
+        addingC('a[href="/about/"]','active');
         
       })

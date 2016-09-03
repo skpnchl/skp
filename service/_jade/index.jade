@@ -14,90 +14,56 @@ html(lang='en')
     section.service.s-seo
       .contener
         h2 search engines optimization
-        br
         p optimize your site.
     section.service.s-sg
       .contener
         h2 your site submit on google
-        br
-        p submit on google webmaster create site map.
+        
+        p submit on google webmaster create site map, humans.txt ,roboto.txt
     section.service.s-snl
       .contener
+        h2 ssl sertificate & site securety
+        p more secure your site Like http to https
         h2 social network linking
-        br
         p link your site with facebook twitter instagram youtube linkedin etc.
     section.service.s-promoting
       .contener
         h2 promoting
-        br
+        
         p advertising website on google facebook.
     section.service.s-logo
       .contener
         h2 logo's design
-        br
+        h2 & borchure design
         p your site icon
     section.service.s-ga
       .contener
         h2 google analytic
-        br
+        h2 & google map
         p track visitor with google analytic and much more
     section.service.s-gtm
       .contener
+        h2 content writing 
         h2 google tag manager
-        br
         p manage website content directly
     section.service.s-redesign
       .contener
-        h2 redesign
-        br
+        h2 design & redesign
+        h2 responsive web design & cross browser capability
         p old design to new design
     section.service.s-cms
       .contener
         h2 cms based site 
-        br
+        h2 cms web development & content writing, web programing
         p easily maintain with content manager system wordpress, joomla, duple
     section.service.s-update
       .contener
         h2 update your site
-        br
+        
         p if your website is online store manage completely with our team
     include ../../_jade/footer
     include ../../_jade/script
     script.
-      $(document).ready(function() {
-        addingC('a[href="/service/"]','active');
-        $('a[href="#s4"]').attr('href','/contect/');
-        
-        var rand = Math.floor(Math.random()*$('.service').length+1);
-        var obja={
-          1: 'bounce',
-          2: 'bounceIn',
-          3: 'flash',
-          4: 'bounceInDown',
-          5: 'rubberBand',
-          6: 'bounceInRight',
-          7: 'bounceInLeft',
-          8: 'shake',
-          9: 'rotateInDownLeft',
-          10: 'rotateINDownRight'
-        }
-        
-        /*addanimate*/
-        var $elems = $('.service');
-        var winheight = $(window).height();
-        var fullheight = $(document).height();
-        $(window).scroll(function(){
-          wintop = $(window).scrollTop();
-          $elems.each(function(){
-            $elm = $(this);
-            if($elm.hasClass('animate')) { return true; }
-            topcoords = $elm.offset().top;
-            if(wintop > (topcoords - (winheight*.75))) {
-              $elm.addClass('animated '+obja[rand]);
-            }
-          });
-        });
-
-      });
+      $(document).ready(function(){addingC('a[href="/service/"]',"active"),$('a[href="#s4"]').attr("href","/contect/");var e=Math.floor(Math.random()*$(".service").length+1),o={1:"bounce",2:"bounceIn",3:"flash",4:"bounceInDown",5:"rubberBand",6:"bounceInRight",7:"bounceInLeft",8:"shake",9:"rotateInDownLeft",10:"rotateINDownRight"},n=$(".service"),t=$(window).height();$(document).height();$(window).scroll(function(){wintop=$(window).scrollTop(),n.each(function(){return $elm=$(this),!!$elm.hasClass("animate")||(topcoords=$elm.offset().top,void(wintop>topcoords-.75*t&&$elm.addClass("animated "+o[e])))})})});
     
       

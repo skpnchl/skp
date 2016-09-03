@@ -5,17 +5,24 @@ html(lang='en')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    title LOGOS
+    title DOMAIN-HELP
     link(rel='icon', type='image/png', href='../favicon.png')
     link(rel='canonical', href='http://www.skpwebsite.com')
     link(rel='stylesheet', href='../css/style.css')
   body
     include ../../_jade/header
-    
+    .domain-help.contener
+      h1 simple tip's to choose perfect domain name
+      ul
+        li for best domain letter shoud be under 12 character's.
+        li word simple and short.
+        li do not use hyphen and numeric letter.
+        li easy to memories word's
+      h3 new future coming soon...!
     include ../../_jade/footer
     include ../../_jade/script
     script.
       $(document).ready(function(){
-        addingC('a[href="/logos/"]','active');
-        
+        addingC('a[href="/domain-help/"]','active');
+
       })

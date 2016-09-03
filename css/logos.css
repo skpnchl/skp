@@ -1,0 +1,21 @@
+#logos {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  background-image: url("../img/logos.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center; }
+  #logos div {
+    overflow: hidden; }
+    #logos div h2 {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: normal;
+      font-size: 2em;
+      margin-top: 20px; }
+    #logos div p {
+      margin-top: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
