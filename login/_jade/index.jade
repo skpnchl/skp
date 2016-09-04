@@ -11,11 +11,33 @@ html(lang='en')
     link(rel='stylesheet', href='../css/style.css')
   body
     include ../../_jade/header
-    
+    .login-m-m
+      center
+        form(action="", method="post")
+          input(type="text", class="firstn-m-m")
+          br
+          input(type="email", class="email-m-m")
+          br
+          input(type="text", class="mobile-m-m")
+          br
+          input(type="password", class="password-m-m")
+          br
+          input(type='submit',class='submit-m-m')
+        br
+        hr
+        br
+        form(action='',method="post")
+          input(type="text", class="l-username-m-m")
+          br
+          input(type='password',class='l-password-m-m')
+          br
+          input(type="submit",class='l-submit-m-m')
+        
+        
     include ../../_jade/footer
     include ../../_jade/script
     script.
       $(document).ready(function(){
-        $('.login>p, .mobile-login').html('CREATE');
-        $('[href="/login/"]').attr('href','/signup/')
+        //- $('.login>p, .mobile-login').html('CREATE');
+        //- $('[href="/login/"]').attr('href','/signup/')
       });

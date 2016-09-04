@@ -60,7 +60,9 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 30px 0px; }
+  padding: 30px 0px;
+  position: relative;
+  box-shadow: 1px 1px 40px 0 rgba(0, 0, 0, 0.6); }
 
 .index0 {
   height: 40px;
@@ -90,7 +92,7 @@ a {
       margin-right: 0px; }
     .nav ul li a {
       font-size: 0.85em;
-      color: gray;
+      color: white;
       -webkit-transition: all 0.3s ease-out;
       transition: all 0.3s ease-out; }
       .nav ul li a:hover {
@@ -105,8 +107,8 @@ a {
   float: right;
   font-size: 1.3em;
   margin-left: 30px;
-  color: #262626;
-  border: 1px solid;
+  color: white;
+  border: 1px solid white;
   padding: 0 15px;
   border-radius: 20px;
   -webkit-transition: all 0.3s ease;
@@ -122,10 +124,9 @@ a {
   display: -ms-flexbox;
   display: flex;
   height: 250px;
-  padding: 30px;
   margin-top: 154px;
-  margin-left: 36px;
-  width: 100%;
+  margin-left: 100px;
+  width: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -143,19 +144,7 @@ a {
   cursor: default;
   line-height: 40px;
   font-size: 2em;
-  color: #f35626;
-  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: hue 60s infinite linear; }
-
-@-webkit-keyframes hue {}
-
-@keyframes hue {}0% {
-  -webkit-filter: hue-rotate(0deg); }
-
-100% {
-  -webkit-filter: hue-rotate(-360deg); }
+  color: #fff; }
 
 .start-now {
   -webkit-user-select: none;
@@ -165,21 +154,23 @@ a {
   cursor: pointer;
   height: 40px;
   line-height: 40px;
-  border: 1px solid;
+  border: 1px solid white;
   width: 140px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   font-weight: 500;
   text-align: center; }
+  .start-now a {
+    color: white; }
   .start-now:hover {
     background-color: rgba(255, 255, 255, 0.5); }
   .start-now:active {
     background: #333333;
-    color: #e6e6e6; }
+    color: black; }
   .start-now a {
     padding: 9px 23px; }
     .start-now a:active {
-      color: #e6e6e6; }
+      color: blck; }
 
 .contener {
   position: relative;
