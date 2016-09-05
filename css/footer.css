@@ -19,18 +19,19 @@ footer > .contener div {
   border-right: 1px solid gray;
   padding-left: 20px; }
   footer > .contener div h2 {
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     cursor: default;
-    letter-spacing: 1px; }
+    letter-spacing: 2px;
+    font-family: h-light; }
   footer > .contener div ul li {
-    margin-bottom: 5px;
-    margin-left: 5px; }
+    margin-bottom: 5px; }
     footer > .contener div ul li a {
-      color: #808080;
       -webkit-transition: all .4s ease;
       transition: all .4s ease;
-      text-transform: capitalize; }
+      text-transform: capitalize;
+      font-size: 14px; }
       footer > .contener div ul li a:hover {
         color: black; }
   footer > .contener div:last-child {

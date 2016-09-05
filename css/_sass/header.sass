@@ -78,8 +78,8 @@ a
 .logo
   float: left
   margin-right: 15px
-  a
-    img
+  height: 100%
+  img
       height: $height-ln - 1px
 .nav
   ul
@@ -87,8 +87,8 @@ a
     float: right
     li
       display: inline-block
-      margin: 0 30px
-      letter-spacing: 1px
+      margin: 0 28px
+      letter-spacing: 2px
       &:first-child
         margin-left: 0px
       &:last-child
@@ -111,16 +111,16 @@ a
   border: 1px solid white
   padding: 0 15px
   border-radius: 20px
+  p
+    letter-spacing: 3px
+    font-family: h-light
   +anim()
   &:hover
-    background-color: rgba(white, 0.5)
-  &:active
-    background: lighten(black, 20%)
-    color: darken(white, 10%)
+    background-color: white
+    color: black
 .header-text
   display: flex
   height: 250px
-  //padding: 30px
   margin-top: 154px
   margin-left: 100px
   width: auto
@@ -128,34 +128,30 @@ a
   justify-content: space-around
 .header1
   h1
-    font-weight: 500
-    color: darken(blue, 40%)
     user-select: none
     cursor: default
-    line-height: 40px
-    font-size: 2em
+    font-size: 3em
     color: #fff
+    letter-spacing: 2px
+    font-family: h-thin
 
 
 .start-now
   +selectnone()
   +vc-height(40px)
   border: 1px solid white
-  width: 140px
-  a
+  max-width: 150px
+  p
     color: white
+    letter-spacing: 1px
+    font-family: h-light
   +anim()
   &:hover
-    background-color: rgba(white, 0.5)
-  &:active
-    background: lighten(black, 20%)
-    color: black
-  font-weight: 500
+    background-color: white
+    p
+      color: black
   text-align: center
-  a
-    padding: 9px 23px
-    &:active
-      color: blck
+
 
 // This is  popup
 .contener

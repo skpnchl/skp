@@ -12,14 +12,16 @@ section#s4
     justify-content: center
   .s4-item1>div,.s4-item2>div
     margin: 0 auto
+.s4-item1>div>h2
+  margin:
+    top: 20px
 .s4-item1>div>h1
   user-select: none
-  font-weight: 500
-  color: #808080
+  letter-spacing: 2px
   .tfms
-    font-weight: 500
-    font-size: 3em
+    font-size: 3.5em
     color: black
+    font-family: h-u-light
 /*form style content*/
 input:focus
   outline: none
@@ -31,7 +33,7 @@ input:focus
   border: none
   border-bottom: 1px solid darken(white, 15%)
   padding-left: 10px
-  transition: all .4s ease
+  transition: all .8s ease
   box-shadow: none
   background: transparent
 .laco
@@ -42,32 +44,26 @@ input:focus
   top: -32px
   left: 0
   white-space: nowrap
-  font-size: 1.3em
+  font-size: 1.1em
+  font-family: h-light
+  letter-spacing: 2px
   pointer-events: none
   color: #808080
   user-select: none
   transition: all .4s ease
 
 .submit
-  width: 140px
-  height: 40px
-  background: none
-  border: 1px solid black
   float: right
-  transition: all .4s ease
-  &:hover
-    background: darken(white, 10%)
-  &:active
-    background: lighten(black, 20%)
-    color: darken(white, 10%)
+  background-color: transparent !important
+
 
 /* events to react*/
 
 .fullname:focus + label>span,.fullname:valid + label>span,
 .email:focus + label>span,.email:valid + label>span,
 .number:focus + label>span,.number:valid + label>span
-  top: -60px
-  font-size: .8em
+  top: -50px
+  font-size: .9em
   color: black
 .fullname:valid,
 .email:valid,

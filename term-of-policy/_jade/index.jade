@@ -5,18 +5,35 @@ html(lang='en')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    title LOGOS
+    title TERM-OF-POLICY
     link(rel='icon', type='image/png', href='../favicon.png')
     link(rel='canonical', href='http://www.skpwebsite.com')
     link(rel='stylesheet', href='../css/style.css')
   body
     include ../../_jade/header
-    
+    h1.top-m-h term of policy
+    .contener.top-m
+      h3 Privacy Statement for SKPWEBSITE.com
+      ul
+        li We do not collect any personal information from our users.
+        li Visits are logged for aggregate statistics and diagnosis
+      h3 Personal User Information
+      ul
+        li Users are free to visit
+        li your information not shere 
+      h3 Visitor Statistics
+      ul
+        li We use cookies to compile visitor statistics such as how many people have visited our website, what type of technology they are using &#40;e.g. Mac or Windows which helps to identify when our site isn't working as it should for particular technologies&#41;, how long they spend on the site, what page they look at etc.
+        li This helps us to continuously improve our website.These analytics programs also tell us if how people reached this site &#40;eg from a search engine&#41; and whether they have been here before helping us to put more money into developing our services for you instead of marketing spend.
+        br
+        li Google Analytics - <a href="http://www.google.com/policies/technologies/">Privacy Policy</a> owned by Google
+      h3 Contacting the Web Site
+      ul
+        li For any questions about this privacy statement, please contact:
+        li skpnchl@gmail.com
     include ../../_jade/footer
-    script(src='../node_modules/jquery/dist/jquery.min.js')
-    script(src='../js/_js/script.js')
+    include ../../_jade/script
     script.
       $(document).ready(function(){
-        addingC('a[href="/logos/"]','active');
         
       })

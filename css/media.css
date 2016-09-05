@@ -12,7 +12,7 @@
     margin-top: 64px;
     padding-bottom: 0; }
     .header-text .header1 > h1 {
-      color: #e6e6e6; }
+      font-size: 1.7em; }
   #header {
     background-image: url("../img/header.jpg"); }
   .box-t-i div {
@@ -73,13 +73,16 @@
     text-align: center;
     font-size: .8em; }
   .footer-c div {
-    text-align: center;
     float: none !important;
     width: 100% !important;
     border: none !important;
     margin-left: 0px !important; }
   .active {
-    color: #00b300 !important; } }
+    color: #00b300 !important; }
+  .m-m1 h1, .m-m2 h1 {
+    font-size: 2.5em !important; }
+  .contact-us-s .en {
+    font-size: 1.5em !important; } }
 
 @media screen and (max-width: 850px) {
   .box-t-c, #template-c {

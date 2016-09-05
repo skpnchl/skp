@@ -10,12 +10,11 @@
   #logos div {
     overflow: hidden; }
     #logos div h2 {
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-weight: normal;
-      font-size: 2em;
-      margin-top: 20px; }
+      font-family: h-u-light;
+      font-size: 70px;
+      color: #4d4d4d;
+      margin-top: 70px; }
     #logos div p {
       margin-top: 30px;
-      text-transform: uppercase;
+      text-transform: capitalize;
       letter-spacing: 1px; }

@@ -10,3 +10,23 @@
 
 .en {
   letter-spacing: 2.5px; }
+
+/* pivacy policy for*/
+.top-m {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .top-m h3 {
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-family: h-light; }
+  .top-m ul {
+    margin-bottom: 20px; }
+  .top-m a {
+    text-decoration: underline; }
+
+.top-m-h {
+  text-align: center;
+  font-family: h-u-light;
+  font-size: 70px;
+  color: #4d4d4d;
+  margin-top: 70px; }
