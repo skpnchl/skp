@@ -99,6 +99,12 @@ gulp.task('jade14', function() {
   .pipe(gulp.dest('./privacy-policy/'))
   .pipe(browserSync.stream())
 });
+gulp.task('jade15', function() {
+  return gulp.src('contact/_jade/*.jade')
+  .pipe(jade())
+  .pipe(gulp.dest('./contact/'))
+  .pipe(browserSync.stream())
+});
 gulp.task('sass', function(){
   return gulp.src('css/_sass/*.sass')
   .pipe(sass())
@@ -151,7 +157,8 @@ gulp.task('serve', function() {
               'customers/_jade/index.jade',
               'term-of-policy/_jade/index.jade',
               'term-of-use/_jade/index.jade',
-              'privacy-policy/_jade/index.jade'
+              'privacy-policy/_jade/index.jade',
+              'contact/_jade/index.jade'
               ],
 
               ['jade',
@@ -168,7 +175,8 @@ gulp.task('serve', function() {
               'jade11',
               'jade12',
               'jade13',
-              'jade14'
+              'jade14',
+              'jade15'
               ]
             );
   gulp.watch('css/style.css', ['minifyCss']);
