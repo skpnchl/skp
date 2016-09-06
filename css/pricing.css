@@ -22,3 +22,7 @@ table.pt-h tr th {
   .t-h2 td {
     box-sizing: content-box;
     padding-top: 20px; }
+
+.table-price {
+  margin-top: 70px;
+  margin-bottom: 20px; }

@@ -29,7 +29,7 @@ $(document).ready(function(){
     $('#mobile-nav-model').slideToggle()
   })
   addingC = function (sele,addclass) {
-    $(sele).addClass(addclass)
+    $(sele+':eq(1)').addClass(addclass)
   }
 
 
