@@ -9,6 +9,8 @@ section#s1
 .s1-item1
   text-align: center
   cursor: default
+  p
+    color: $clr8
   .s1-item1-1
     text-transform: uppercase
     margin: 20px 0
@@ -16,7 +18,8 @@ section#s1
       font:
         size: 3em
         family: h-u-light
-      color: darken(white, 70%)
+      color: $clr10
+
 .s1-item2
   transition: all .3s ease
   text-transform: uppercase
@@ -29,8 +32,11 @@ section#s1
   width: 150px
   font-family: h-light
   &:hover
-    background-color: #000 !important
-    color: white
+    background-color: $clrprim
+    border-color: $clrprim
+    border-radius: 20px
+    p
+      color: $clr11
 /* all section for*/
 .s1-item1-1,.s2-item2 div h1
   letter-spacing: 2px

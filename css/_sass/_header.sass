@@ -44,24 +44,6 @@ a
 .clearfix
   clear: both
   float: none
-=vc-height($height)
-  height: $height
-  line-height: $height
-=anim()
-  transition: all 0.3s ease
-=selectnone()
-  user-select: none
-  cursor: pointer
-=border()
-  border: 1px solid black
-=popup()
-  position: absolute
-  top: 45px
-  right: 120px
-  bottom: 0
-  height: 300px
-  width: 550px
-  background-color: rgba(white, 0.95)
 #header
   text-transform: uppercase
   height: 500px
@@ -98,11 +80,11 @@ a
         color: white
         transition: all 0.3s ease-out
         &:hover
-          color: black
+          color: $clr10
         &.active
-          color: #00b300
+          color: $clrprim
 .active
-  color: #00b300
+  color: $clrprim
 .login
   float: right
   font-size: 1.3em
@@ -116,8 +98,9 @@ a
     font-family: h-light
   +anim()
   &:hover
-    background-color: white
-    color: black
+    background-color: $clrprim
+    border-color: $clrprim
+    color: $clr11
 .header-text
   display: flex
   height: 250px
@@ -131,7 +114,7 @@ a
     user-select: none
     cursor: default
     font-size: 3em
-    color: #fff
+    color: white
     letter-spacing: 2px
     font-family: h-thin
 
@@ -147,9 +130,11 @@ a
     font-family: h-light
   +anim()
   &:hover
-    background-color: white
+    background-color: $clrprim
+    border-color: $clrprim
+    border-radius: 25px
     p
-      color: black
+      color: $clr11
   text-align: center
 
 

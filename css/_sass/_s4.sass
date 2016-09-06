@@ -15,12 +15,14 @@ section#s4
 .s4-item1>div>h2
   margin:
     top: 20px
+  color: $clr8
 .s4-item1>div>h1
   user-select: none
   letter-spacing: 2px
+  color: $clr9
   .tfms
     font-size: 3.5em
-    color: black
+    color: $clr11
     font-family: h-u-light
 /*form style content*/
 input:focus
@@ -39,6 +41,7 @@ input:focus
 .laco
   position: relative
   border: 1px solid transparent
+  transition: all .4s ease
 .laco>span
   position: absolute
   top: -32px
@@ -46,15 +49,17 @@ input:focus
   white-space: nowrap
   font-size: 1.1em
   font-family: h-light
-  letter-spacing: 2px
+  letter-spacing: 1px
   pointer-events: none
-  color: #808080
+  color: $clr9
   user-select: none
   transition: all .4s ease
 
 .submit
   float: right
-  background-color: transparent !important
+  background-color: transparent
+  font-size: 16px
+  letter-spacing: 1px
 
 
 /* events to react*/
@@ -63,17 +68,17 @@ input:focus
 .email:focus + label>span,.email:valid + label>span,
 .number:focus + label>span,.number:valid + label>span
   top: -50px
-  font-size: .9em
-  color: black
+  font-size: .8em
+  color: $clr11
 .fullname:valid,
 .email:valid,
 .number:valid
-  border-bottom: 1px solid lighten(green, 10%)
+  border-bottom-color: $clrpass
 .fullname:hover,
 .email:hover,
 .number:hover
-  border-bottom: 1px solid black
+  border-bottom: 1px solid $clrprim2
 .fullname:focus,
 .email:focus,
 .number:focus
-  border-bottom: 1px solid black
+  border-bottom: 2px solid $clrprim2

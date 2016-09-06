@@ -7,6 +7,8 @@ section#template-c
   padding: 10px 0
   overflow: hidden
   background: white
+  margin:
+    top: 50px
   ul
     display: flex
     justify-content: space-around
@@ -14,27 +16,28 @@ section#template-c
       float: left
       padding: 5px 8px
       white-space: nowrap
-      color: #808080
+      color: $clr9
+      font-size: 14px
       text-transform: uppercase
       user-select: none
       cursor: pointer
       transition: all .3s ease
       &:hover
-        color: black
+        color: $clr11
       &.active
-        color: lighten(green,10%) !important
+        color: $clrprim2
 .box-t-i
   background: #fff
   display: flex
   flex-wrap: wrap
   justify-content: space-between
   transition: all 1s ease
-  padding-bottom: 15px
+  padding: 30px 10
   div
     background: #fff
     width: 26%
     height: auto
-    margin-top: 15px
+    margin-top: 25px
     animation: cate-anim .6s ease
     overflow: hidden
     border-radius: 5px
@@ -42,10 +45,12 @@ section#template-c
     a
       h3
         text-align: center
-        margin: 3px 0px
+        margin: 8px 0px
         font-weight: normal
         white-space: nowrap
         text-transform: capitalize
+        font-size: 16px
+        font-family: h-light
       img
         width: 100%
 .box-t-i div img
